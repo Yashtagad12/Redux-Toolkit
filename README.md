@@ -1,6 +1,6 @@
 # 🛒 Redux Cart & Counter — React + Redux Toolkit
 
-<!-- ![Project Banner](./src/assets/hero.png) -->
+![Project Banner](./src/assets/Screenshots/1.png)
 
 **A modern cart-based web application demonstrating global state management with Redux Toolkit**
 
@@ -80,34 +80,38 @@ The app is split into two demonstration modules: a **product cart** (fetching li
 
 ## 📸 Screenshots
 
-<!-- ### 🏠 Home Page -->
-<!-- ![Home Page](./src/assets/screenshots/home.png) -->
+### 🏠 Home Page
 
-<!-- ### 🛍️ Product Listing -->
-<!-- ![Product Listing](./src/assets/screenshots/products.png) -->
+![Home Page](./src/assets/Screenshots/2.png)
 
-<!-- ### 🛒 Cart -->
-<!-- ![Cart Page](./src/assets/screenshots/cart.png) -->
+### 🛍️ Product Listing
 
-<!-- ### 🔢 Counter -->
-<!-- ![Counter Page](./src/assets/screenshots/counter.png) -->
+![Product Listing](./src/assets/Screenshots/5.png)
 
-*Screenshots coming soon.*
+### 🛒 Cart
+
+![Cart Page](./src/assets/Screenshots/3.png)
+
+### 🔢 Counter
+
+![Counter Page](./src/assets/Screenshots/4.png)
+
+_Screenshots coming soon._
 
 ---
 
 ## 🚀 Tech Stack
 
-| Technology | Version | Purpose |
-|---|---|---|
-| **React** | 19.2.7 | Core frontend framework |
-| **Redux Toolkit** | 2.12.0 | Global state management |
-| **React Redux** | 9.3.0 | React bindings for Redux |
-| **React Router** | 8.2.0 | Client-side routing |
-| **Axios** | 1.18.1 | HTTP client for API requests |
-| **Tailwind CSS** | 4.3.2 | Utility-first styling |
-| **Vite** | 8.1.1 | Build tool and dev server |
-| **React Toastify** | 11.1.0 | Toast notifications |
+| Technology         | Version | Purpose                      |
+| ------------------ | ------- | ---------------------------- |
+| **React**          | 19.2.7  | Core frontend framework      |
+| **Redux Toolkit**  | 2.12.0  | Global state management      |
+| **React Redux**    | 9.3.0   | React bindings for Redux     |
+| **React Router**   | 8.2.0   | Client-side routing          |
+| **Axios**          | 1.18.1  | HTTP client for API requests |
+| **Tailwind CSS**   | 4.3.2   | Utility-first styling        |
+| **Vite**           | 8.1.1   | Build tool and dev server    |
+| **React Toastify** | 11.1.0  | Toast notifications          |
 
 ---
 
@@ -208,13 +212,15 @@ export default store;
 ### 🔢 Counter Slice
 
 **State**
+
 ```javascript
 {
-  count: 0
+  count: 0;
 }
 ```
 
 **Actions**
+
 - `increment()`
 - `decrement()`
 - `reset()`
@@ -222,6 +228,7 @@ export default store;
 ### 🛒 Cart Slice
 
 **State**
+
 ```javascript
 {
   cart: [],
@@ -230,6 +237,7 @@ export default store;
 ```
 
 **Actions**
+
 - `addItem()`
 - `removeItem()`
 - `clearCart()`
@@ -288,12 +296,12 @@ Open `http://localhost:5173` to view it in the browser.
 
 ## 📜 Available Scripts
 
-| Script | Description |
-|---|---|
-| `npm run dev` | Starts the Vite development server |
-| `npm run build` | Builds the app for production |
+| Script            | Description                           |
+| ----------------- | ------------------------------------- |
+| `npm run dev`     | Starts the Vite development server    |
+| `npm run build`   | Builds the app for production         |
 | `npm run preview` | Previews the production build locally |
-| `npm run lint` | Runs ESLint for code quality checks |
+| `npm run lint`    | Runs ESLint for code quality checks   |
 
 ---
 
@@ -378,4 +386,4 @@ This project is created for learning purposes and is free to use.
 
 **Built with ❤️ using React & Redux Toolkit**
 
-*🛒 Redux Cart & Counter — Practice project exploring global state management*
+_🛒 Redux Cart & Counter — Practice project exploring global state management_
