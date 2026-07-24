@@ -278,7 +278,7 @@ The application is fully responsive and optimized across:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/redux-toolkit-project.git
+git clone https://github.com/Yashtagad12/Redux-Toolkit.git
 
 # 2. Navigate into the project directory
 cd redux-toolkit-project
@@ -322,8 +322,6 @@ Open `http://localhost:5173` to view it in the browser.
   }
 }
 ```
-
-> Note: the earlier draft also listed a standalone `toastify` package alongside `react-toastify` — that's very likely redundant (they serve the same purpose). Worth double-checking your actual `package.json` and removing whichever one isn't actually imported.
 
 ---
 
@@ -383,7 +381,5 @@ This project was built to practice:
 This project is created for learning purposes and is free to use.
 
 ---
-
-**Built with ❤️ using React & Redux Toolkit**
 
 _🛒 Redux Cart & Counter — Practice project exploring global state management_
