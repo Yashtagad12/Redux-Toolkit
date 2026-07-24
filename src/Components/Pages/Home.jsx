@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { increment, decrement, reset } from '../../redux/CounterSlice';
 import { addItem, removeItem } from "../../redux/CartSlice";
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
@@ -47,18 +46,25 @@ const Home = () => {
     )
   }
 
-  return (
-    <section className="py-5">
-      <h1 className='text-3xl text-center font-bold my-10'>Our Products</h1>
 
-      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-4'>
-        {
-          product.map((item) => (
-            <ProductCard key={item.id} data={item} />
-          ))
-        }
-      </div>
-    </section>
+
+  return (
+
+    <>
+
+      < section className="py-5" >
+        <h1 className='text-3xl text-center font-bold my-10'>Our Products</h1>
+
+        <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-4'>
+          {
+            product.map((item) => (
+              <ProductCard key={item.id} data={item} />
+            ))
+          }
+        </div>
+      </section >
+    </>
+
   )
 };
 
@@ -92,6 +98,7 @@ const ProductCard = ({ data }) => {
     }
 
   }
+
 
   // Use first image from array or thumbnail fallback
   const imageUrl = images && images.length > 0 ? images[0] : thumbnail
