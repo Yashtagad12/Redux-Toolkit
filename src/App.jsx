@@ -7,6 +7,7 @@ import { Provider } from "react-redux"
 import store from "./redux/store"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import CounterButtons from "./Components/Pages/CounterButtons"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path={'/'} element={<Home />} />
           <Route path={'/cart'} element={<Cart />} />
+          <Route path={'/counter'} element={<CounterButtons />} />
         </Route>
       </Routes>
     </Provider>
