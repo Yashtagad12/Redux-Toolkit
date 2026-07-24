@@ -8,8 +8,8 @@ const Header = () => {
     const cartCount = useSelector((state) => state.cartStore.totalQuantity);
 
     return (
-        <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-default">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav className="bg-white fixed w-full z-20 top-0 inset-s-0 border-b border-default">
+            <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a
                     href="https://flowbite.com/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -53,7 +53,7 @@ const Header = () => {
                         <li>
                             <Link
                                 to={'/'}
-                                className="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                                className="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand p-1"
                                 aria-current="page"
                             >
                                 Home
@@ -62,13 +62,23 @@ const Header = () => {
                         <li>
                             <Link
                                 to={'/cart'}
-                                className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                                className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand p-1 md:dark:hover:bg-transparent"
                             >
                                 Cart ({cartCount})
                             </Link>
                         </li>
                         <li>
-                            <button>Counter {myData}</button>
+                            <Link
+                                to={'/counter'}
+                                className="block py-2 px-3 text-black bg-brand rounded md:bg-transparent md:text-fg-brand p-1"
+                                aria-current="page"
+                            >
+                                Counter Operations
+                            </Link>
+
+                        </li>
+                        <li>
+                            <button className='block py-2 bg-blue-600 text-white px-2 rounded-b-sm'>Counter {myData}</button>
                         </li>
                     </ul>
                 </div>
